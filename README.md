@@ -9,5 +9,6 @@ data='"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
 "itemUrl": "https://marketplace.visualstudio.com/items"'
 
 sudo sed -i '/itemUrl/d' /usr/share/codium/resources/app/product.json
-perl -spe 's/.serviceUrl.*/$var/' -- -var="$data"  /usr/share/codium/resources/app/product.json
+perl -spe 's/.serviceUrl.*/$var/' -- -var="$data"  /usr/share/codium/resources/app/product.json > /tmp/product.json
+sudo cp /tmp/product.json /usr/share/codium/resources/app/product.json
 ```
