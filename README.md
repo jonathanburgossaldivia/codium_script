@@ -1,7 +1,7 @@
 # codium_script
 Solve the problem "Cannot connect to Extensions marketplace" on Open Suse
 
-Run this command:
+Run this commands:
 
 ```console
 data='"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
